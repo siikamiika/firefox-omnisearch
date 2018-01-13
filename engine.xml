@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"> 
+  <ShortName>omnisearch</ShortName> 
+  <Description>Search anything</Description> 
+  <InputEncoding>UTF-8</InputEncoding> 
+  <LongName>omnisearch</LongName> 
+  <Image height="16" width="16">data:image/x-icon;base64,R0lGODlhEAAQAOMPAAAAAAAFBQAKCQA3NAA7OAA/OwBfWQBiXABlXwCBeQDp2wDq3ADt3wDu4AD87f///ywAAAAAEAAQAAAEUxDISau9GAhTCBnBFQyJwyjoAVaDsjQIcaDKQAUzso6IcoSSVo2FskkIPuAEpyBMkE4L9JmsMKMAoXGiXeZ2g96PIvTJaFvJaEbzrSwjz0eZwUQAADs=</Image>
+  <Url type="text/html" method="post" template="http://127.0.0.1:9881/search">
+    <Param name="q" value="{searchTerms}"/>
+  </Url>
+  <Url type="application/x-suggestions+json" template="http://127.0.0.1:9881/suggestions?q={searchTerms}"/>
+</OpenSearchDescription>
